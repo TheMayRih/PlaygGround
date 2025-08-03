@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>move box</title>
+	</head>
+	<body>
+		<canvas id="canvas" context="2d"></canvas>
+		
+		<div class="one">1</div>
+		<div class="two">2</div>
+		<div class="three">3</div>
+		<div class="go">GO!</div>
+		<object id="obstacle"></object>
+	</body>
+	<script>
+	alert("OBJECTIVE IS SIMPLE CATCH THE ORANGE BOX ..HAVE FUN!")
+ var obstacle = document.getElementById("obstacle");
+window.addEventListener("click",start)
+function start(){
+window.setInterval(function(){  obstacle.style.top=Math.floor(Math.random()*399) + "px"; obstacle.style.left=Math.floor(Math.random()*399) + "px";},300) 
+window.removeEventListener("click",start)
+obstacle.addEventListener ("click",end)
+function end(){
+	alert("WOHOOO WE HAVE OURSELVES A WINNER!!..AND YOUR PRIZE IS DRUM ROOOOOLSSSSS NNNNNOTHING! ")
+	alert ("Feel free to increase the difficulty O'The Almighty One!'")
+}
+};
+
+
+   </script>
+</html>
